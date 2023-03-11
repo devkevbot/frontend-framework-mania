@@ -1,0 +1,25 @@
+button {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h1 {
+  font-size: 2rem;
+}
+form {
+  display: grid;
+  place-content: center;
+}
+input {
+  padding: 0.5rem;
+}
+legend {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+fieldset {
+  padding: 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

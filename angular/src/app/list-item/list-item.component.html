@@ -1,0 +1,11 @@
+<div class="list-item">
+  <h2>{{ id }} - {{ desc }}</h2>
+  <span>Done? {{ done.toString() }}</span
+  ><br />
+  <div>
+    <button type="button" (click)="toggleDone(id)">Toggle done</button>
+    <button type="button" class="danger" (click)="deleteTodo(id)">
+      Delete todo
+    </button>
+  </div>
+</div>

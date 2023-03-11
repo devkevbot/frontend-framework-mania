@@ -1,0 +1,28 @@
+<div>
+  <h1>We have created {{ todoCreationCount }} TODOS so far</h1>
+  <form>
+    <fieldset>
+      <legend>Create a TODO!</legend>
+      <label>
+        Enter a description:&nbsp;
+        <input
+          type="text"
+          id="description"
+          [value]="createDesc"
+          (input)="onInputCreateDesc($event)"
+        />
+      </label>
+      <button type="button" (click)="createTodo()">Create</button>
+    </fieldset>
+  </form>
+  <div *ngFor="let item of todos">
+    <list-item
+      [id]="item.id"
+      [desc]="item.desc"
+      [done]="item.done"
+      [toggleDone]="toggleDone.bind(this)"
+      [deleteTodo]="deleteTodo.bind(this)"
+    >
+    </list-item>
+  </div>
+</div>
